@@ -21,23 +21,19 @@ public class PlayerControls : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() {
-        if (Input.GetMouseButtonDown(0)) {
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
             rb.velocity = Vector2.up * velocity;
         }
 
     }
-        private void OnCollisionEnter2D(Collision2D collision) {
-            if (collision.gameObject.tag == "HighSpike" || collision.gameObject.tag == "LowSpike" || collision.gameObject.tag == "Ground") {
-                Time.timeScale = 0;
-            }
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "HighSpike" || collision.gameObject.tag == "LowSpike" || collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "HighSpike" || collision.gameObject.tag == "LowSpike" || collision.gameObject.tag == "Ground")
         {
             GameObject.Find("GameController").GetComponent<GameController>().GameOver();
         }
-        
     }
 }
