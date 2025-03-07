@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
         gameOverCanvas.SetActive(false);
         spawner.SetActive(true);
     }
-public void GameOver()
+    public void GameOver()
     {
         gameOverCanvas.SetActive(true);
         spawner.SetActive(false);

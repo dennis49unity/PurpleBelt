@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/dciii_meanybird.unity
     guid: e506a30f7f6cb9a4784ed4b0eb213e27
   - enabled: 1
