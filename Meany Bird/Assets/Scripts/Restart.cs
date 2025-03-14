@@ -7,7 +7,7 @@ public class Restart : MonoBehaviour
 {
     public void RestartGame()
     {
-        Debug.Log("hgdfgdfg");
+        Debug.Log("rasefevdcsdssddsssdrnw 5");
         SceneManager.LoadScene(0);
     }
 }
