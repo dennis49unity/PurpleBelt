@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class PlayerControls : MonoBehaviour
 {
     [Header("Rigidbody Settings")]
-    [Tooltip("Rigidbody2D object that is stored"]
+    [Tooltip("Rigidbody2D object that is stored")]
     public Rigidbody2D rb;
-    Tooltip("Downward speed of the objects")]
+    [Tooltip("Downward speed of the objects")]
     public float downSpeed = 20f;
 
     [Header("Movement Settings")]
