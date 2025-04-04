@@ -5,13 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ResetPlatform : MonoBehaviour
 {
-    void Start()
+    private void OnBecameInvisible()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        GameController.MovePlatformToTop(gameObject);
     }
 }

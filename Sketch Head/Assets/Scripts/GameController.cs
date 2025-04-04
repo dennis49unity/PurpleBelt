@@ -10,6 +10,13 @@ public class GameController : MonoBehaviour
     public GameObject platform;
     public float yPos = 0;
 
+    [Header("Game Over UI Canvas Object")]
+    public GameObject gameOverCanvas;
+
+    public static void GameOver()
+    {
+        instance.gameOverCanvas.SetActive(true);
+    }
     // Start is called before the first frame update
     void Start()
     {
