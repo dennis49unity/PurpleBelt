@@ -17,6 +17,9 @@ public class GameController : MonoBehaviour
     {
         instance.gameOverCanvas.SetActive(true);
     }
+
+    public GameObject fakePlatform;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +43,7 @@ public class GameController : MonoBehaviour
         Instantiate(instance.platform, new Vector3(xPosition, instance.yPos, 0), Quaternion.identity);
         instance.yPos += 2.5f;
 
+        Instantiate(instance.fakePlatform, new Vector3(xPosition, instance.yPos, 0), Quaternion.identity);
 
     }
 
