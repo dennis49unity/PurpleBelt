@@ -8,7 +8,7 @@ public class SpawnObjects : MonoBehaviour
     [Header("Spawn Cube Object")]
     public GameObject spawnCube;
     [Header("Default Difficulty")]
-    punlic float difficulty = 40f;
+    public float difficulty = 40f;
     float spawn;
 
     // Update is called once per frame
@@ -16,7 +16,7 @@ public class SpawnObjects : MonoBehaviour
     {
         spawn -= 1;
         Vector3 v3Pos = transform.position + new Vector3(Random.value * 40f - 20f, 0, Random.value * 40f - 20f);
-        Quaternion qRotation = Quarternion.Euler(0, Random.value * 360f, Random.value * 30f);
+        Quaternion qRotation = Quaternion.Euler(0, Random.value * 360f, Random.value * 30f);
         GameObject createObject = Instantiate(spawnCube, v3Pos, qRotation);
     }
 }

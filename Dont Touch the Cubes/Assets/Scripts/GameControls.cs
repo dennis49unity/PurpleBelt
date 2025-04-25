@@ -5,15 +5,12 @@ using UnityEngine.UI;
 
 public class GameControls: MonoBehaviour
 {
+    private Text timerText;
+    private int timerCount;
+
     // Start is called before the first frame update
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        Time.timeScale = 1f;
     }
 }

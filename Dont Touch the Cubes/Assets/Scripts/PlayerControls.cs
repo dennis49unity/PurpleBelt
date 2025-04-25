@@ -29,4 +29,10 @@ public class PlayerControls : MonoBehaviour
 
         transform.position = new Vector3(clampedX, 0, clampedZ);
     }
+
+
+    void OnCollisionEnter(Collision collision)
+    { 
+        SceneManager.LoadScene(0);
+    }
 }
