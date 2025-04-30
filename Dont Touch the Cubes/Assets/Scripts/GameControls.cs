@@ -12,5 +12,16 @@ public class GameControls: MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        StartCoroutine(CountTime());
+        timerText = GameObject.Find("Score").GetComponent<Text>();
+    }
+
+    IEnumerator CountTime()
+    {
+        yield return new WaitForSeconds(1f);
+        timerCount++;
+        timerText.text = "Score: " + timerCount;
+        StartCoroutine(CountTime());
+
     }
 }
