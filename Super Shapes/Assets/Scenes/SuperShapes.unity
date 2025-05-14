@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -157,6 +157,7 @@ MonoBehaviour:
   - {fileID: 5608908145742263239, guid: a7a20bb749b744044bb235ea1e406d4b, type: 3}
   spawnDelay: 2
   spawnTime: 3
+  gameOverCanvas: {fileID: 1311177003}
 --- !u!4 &277021533
 Transform:
   m_ObjectHideFlags: 0
@@ -453,6 +454,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1311177003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5601356359150799857, guid: 4d260ae53ea38094e968ca102d743526,
+    type: 3}
+  m_PrefabInstance: {fileID: 1717529635}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1402964099
 PrefabInstance:
   m_ObjectHideFlags: 0

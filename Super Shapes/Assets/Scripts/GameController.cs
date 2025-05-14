@@ -17,6 +17,9 @@ public class GameController : MonoBehaviour
     [Header("Default Spawn Time")]
     public float spawnTime = 3;
 
+    [Header("Game Over UI Canvas")]
+    public GameObject gameOverCanvas;
+
 
     void Start()
     {
@@ -35,5 +38,7 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         CancelInvoke("Spawn");
+        gameOverCanvas.SetActive(true);
+        Time.timeScale = 0;
     }
 }
